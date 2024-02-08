@@ -705,5 +705,5 @@ export {
   toCamelCase,
   toClassName,
   updateSectionsStatus,
-  waitForLCP,
+  waitForLCP
 };
