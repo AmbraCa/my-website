@@ -30,4 +30,32 @@
     flex: 1;
     order: unset;
   }
+
+}
+
+h3{
+  color: #333;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 40px;
+  font-family: Metropolis, sans-serif;
+}
+
+.columns p{
+  font-family: Metropolis, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
+}
+#i-valori-di-ariston{
+  color: #c41230;
+  text-transform: uppercase;
+  font-family: Metropolis,sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 3.75px;
+  line-height: 32px;
+  margin: 50px 0;
+  text-align: center;
 }

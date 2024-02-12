@@ -12,7 +12,7 @@
 
 :root {
   /* colors */
-  --link-color: #035fe6;
+  --link-color: #c41230;
   --link-hover-color: #136ff6;
   --background-color: white;
   --light-color: #eee;
@@ -207,4 +207,14 @@ main .section {
 main .section.light,
 main .section.highlight {
   background-color: white;
+}
+
+p{
+  font-family: Metropolis, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  padding-bottom: 14px;
+  font-weight: 400;
 }

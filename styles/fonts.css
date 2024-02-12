@@ -15,3 +15,13 @@
   src: url('../fonts/roboto-regular.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('https://github.com/dw5/Metropolis/blob/master/Fonts/Webfonts/WOFF2/Metropolis-Black.woff2') format('woff2'), /* Update with the correct path */
+  url('https://github.com/dw5/Metropolis/blob/master/Fonts/Webfonts/WOFF/Metropolis-Black.woff') format('woff'); /* Update with the correct path */
+  src: url('https://github.com/dw5/Metropolis/blob/master/Fonts/Webfonts/WOFF2/Metropolis-Bold.woff2') format('woff2'), /* Update with the correct path */
+  url('https://github.com/dw5/Metropolis/blob/master/Fonts/Webfonts/WOFF/Metropolis-Bold.woff') format('woff'); /* Update with the correct path */
+  font-weight: 400;
+  font-style: normal;
+}
