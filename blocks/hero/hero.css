@@ -64,6 +64,7 @@ main .hero-container {
     font-weight: normal;
     color: white;
     width: 50%;
+
 }
 
 h5{
@@ -75,8 +76,11 @@ h5{
 }
 
 .heroone::before {
-    content: url('/Users/acala/Desktop/Edge Delivery Project/my-website/icons/logo-ariston-bianco.png'); /* Replace icon.png with the path to your icon image */
     margin-right: 10px; /* Margin to separate the icon from the text */
     position: absolute; /* Position the icon absolutely */
     left: 10px; /* Adjust the left position of the icon */
+}
+
+.herotwo.block{
+    background: rgba(0,0,0,.35);
 }

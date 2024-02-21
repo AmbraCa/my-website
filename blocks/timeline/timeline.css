@@ -1,82 +1,31 @@
-main .hero-container > div {
-  max-width: unset;
-}
-  
-main .hero-container {
-  padding: 0;
+/* Timeline container */
+.timeline-container {
+    /* Your styles for the timeline container */
 }
 
-.hero {
-  position: relative;
-  padding: 32px;
-  min-height: 300px;
-  margin-left: 120px;
-  margin-right: 120px;
+/* Timeline wrapper */
+.timeline-wrapper {
+    margin-left: 400px;
+    margin-right: 400px;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
+/* Timeline block */
+.timeline.block {
+    /* Your styles for the timeline block */
 }
 
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+/* Timeline items */
+.timeline-wrapper > .timeline > div {
+    /* Your styles for the timeline items */
 }
 
-.hero img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-    background: rgba(0,0,0,.35);
+/* Timeline item content */
+.timeline-wrapper > .timeline > div > div {
+    /* Your styles for the content within timeline items */
 }
 
-#il-nostro-pianeta-la-nostra-casa{
- text-transform: uppercase;
-  outline: none !important;
-  word-break: break-word;
-  font-family: "Open Sans SemiBold";
-  font-weight: 400;
-  letter-spacing: 3.75px;
-  line-height: 32px;
-  font-size: 28px;
-  color: #fff;
-}
-
-.heroone p{
-    font-family: Metropolis, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    color: white;
-    text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-
-.herotwo p{
-    font-family: Metropolis, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    color: white;
-    width: 50%;
-}
-
-h5{
-    text-align: center;
-    color: white;
-    font-family: Metropolis, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-}
-
-.heroone::before {
-    content: url('/Users/acala/Desktop/Edge Delivery Project/my-website/icons/logo-ariston-bianco.png'); /* Replace icon.png with the path to your icon image */
-    margin-right: 10px; /* Margin to separate the icon from the text */
-    position: absolute; /* Position the icon absolutely */
-    left: 10px; /* Adjust the left position of the icon */
+.inline-div {
+    display: inline-block;
+    vertical-align: top; /* Align divs to the top of the line */
+    margin-right: 10px; /* Add some space between divs */
 }

@@ -9,7 +9,6 @@
 }
 
 .cards > ul > li {
-  border: 1px solid var(--dark-color);
   background-color: var(--background-color);
   justify-content: center;
 }
@@ -17,6 +16,7 @@
 .cards .cards-card-body {
   margin: 16px;
   font-size: 14px;
+  text-align: center;
 }
 
 .cards .cards-card-image {
@@ -28,7 +28,7 @@
 }
 
 .cards > ul > li img {
-  width: 15%;
+  width: 40%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
@@ -72,4 +72,9 @@
 .cards-card-image img {
   max-width: 100%; /* Ensure the image does not exceed the container's width */
   height: auto; /* Maintain the aspect ratio of the image */
+}
+
+.cards-container {
+  margin-left: 20%;
+  margin-right: 20%;
 }

@@ -1,10 +1,11 @@
+/*
 
 // Funzione per creare e popolare la timeline
 function createTimeline() {
     const timelineList = document.querySelector('.timeline-list');
 
     // Per ogni elemento nel dataset, creiamo un elemento della timeline
-    timelineData.forEach(item => {
+    timelineList.forEach(item => {
         const listItem = document.createElement('li');
         listItem.classList.add('timeline-item', 'clearfix');
 
@@ -59,3 +60,4 @@ function createTimeline() {
 
 // Chiamiamo la funzione per creare la timeline al caricamento della pagina
 window.addEventListener('load', createTimeline);
+*/

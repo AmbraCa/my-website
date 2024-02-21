@@ -1,80 +1,39 @@
+/*
 export default function decorate(block) {
-    const rows= [...block.children];
-    [...block.children].forEach((row,r) => {
-        if(r==0){
-            const nextbtn = document.createElement('button');
-            nextbtn.classList.add('btn');
-            nextbtn.classList.add('btn-next');
-            const node = document.createTextNode(row.textContent);
-            nextbtn.append(node);
-            row.replaceWith(nextbtn);
-        }else if(r==rows.length-1){
-            const prebtn = document.createElement('button');
-            prebtn.classList.add('btn');
-            prebtn.classList.add('btn-prev');
-            const node = document.createTextNode(row.textContent);
-            prebtn.append(node);
-            row.replaceWith(prebtn);
-        }else{
-            row.classList.add('slide');
-            [...row.children].forEach((col,c) => {
-                console.log("====> ",row,r,col,c);
-                if(c==1){
-                    col.classList.add('slide-text');
-                }
-
-            });
-        }
-    });
-
-
-    const slides = document.querySelectorAll(".slide");
-
-    // loop through slides and set each slides translateX
-    slides.forEach((slide, indx) => {
-        slide.style.transform = `translateX(${indx * 100}%)`;
-    });
-
-    // select next slide button
-    const nextSlide = document.querySelector(".btn-next");
-
-    // current slide counter
-    let curSlide = 0;
-    // maximum number of slides
-    let maxSlide = slides.length - 1;
-
-    // add event listener and navigation functionality
-    nextSlide.addEventListener("click", function () {
-        // check if current slide is the last and reset current slide
-        if (curSlide === maxSlide) {
-            curSlide = 0;
+    const rows = [...block.children];
+    [...block.children].forEach((row, r) => {
+        if (row[0].querySelector('picture')) {
+            if (r == 0) {
+                const pic = r.querySelector('picture');
+                const image_one = document.createElement('picture');
+                image_one.classList.add('picture');
+                const text = r.querySelector('textarea');
+                const text_one = document.createElement('textarea');
+                text_one.classList.add('textarea');
+                row.replaceWith(text_one);
+                row.replaceWith(image_one, text_one);
+            } else if (r == rows.length - 1) {
+                const description = document.createElement('div');
+                description.classList.add('description');
+                row.replaceWith(description);
+            }
         } else {
-            curSlide++;
+            if (r == 0) {
+                const description = document.createElement('div');
+                description.classList.add('description');
+                row.replaceWith(description);
+            }
+            if (r == 1) {
+                const pic2 = r.querySelector('picture');
+                const image_two = document.createElement('picture');
+                image_two.classList.add('picture');
+                const text = r.querySelector('textarea');
+                const text_two = document.createElement('textarea');
+                text_two.classList.add('textarea');
+                row.replaceWith(text_two);
+                row.replaceWith(image_two, text_two);
+            }
         }
-
-        //   move slide by -100%
-        slides.forEach((slide, indx) => {
-            slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-        });
     });
-
-    // select next slide button
-    const prevSlide = document.querySelector(".btn-prev");
-
-    // add event listener and navigation functionality
-    prevSlide.addEventListener("click", function () {
-        // check if current slide is the first and reset current slide to last
-        if (curSlide === 0) {
-            curSlide = maxSlide;
-        } else {
-            curSlide--;
-        }
-
-        //   move slide by 100%
-        slides.forEach((slide, indx) => {
-            slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-        });
-    });
-
-
 }
+*/
